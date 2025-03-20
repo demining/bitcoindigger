@@ -1,11 +1,12 @@
 # How to extract RSZ values ​​(R, S, Z) from Bitcoin transaction RawTx and uses the ["Bloom filter"](https://keyhunters.ru/how-to-extract-rsz-values-r-s-z-from-bitcoin-transaction-rawtx-and-uses-the-bloom-filter-algorithm-to-speed-up-the-work/) algorithm to speed up the work
 
+
 <!-- wp:paragraph -->
 <p><a href="https://polynonce.ru/author/polynonce/"></a></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"linkDestination":"custom"} -->
-<figure class="wp-block-image"><a href="https://cryptodeeptech.ru/discrete-logarithm/" target="_blank" rel="noreferrer noopener"><img src="https://camo.githubusercontent.com/3568257c92c143826ea99b9e75ccdf3b05ed58e05081f33d93b5aca5129d67fc/68747470733a2f2f63727970746f64656570746f6f6c2e72752f77702d636f6e74656e742f75706c6f6164732f323032342f31322f474f4c4431303331422d31303234783537362e706e67" alt="Discrete Logarithm mathematical methods and tools for recovering cryptocurrency wallets Bitcoin"/></a></figure>
+<!-- wp:image {"lightbox":{"enabled":false},"id":2513,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://cryptodeeptech.ru/discrete-logarithm/" target="_blank" rel="noreferrer noopener"><img src="https://keyhunters.ru/wp-content/uploads/2025/03/visual-selection-1-1-1024x835.png" alt="" class="wp-image-2513"/></a></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -88,15 +89,15 @@ git clone https://github.com/iceland2k14/rsz.git
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Creating a filter</strong> : The client creates a Bloom filter by adding hashes of addresses that are of interest to it.</li>
+<li><strong>Creating a filter</strong>&nbsp;: The client creates a Bloom filter by adding hashes of addresses that are of interest to it.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Query full nodes</strong> : The client sends a Bloom filter to full nodes, which check if there are transactions in the blockchain that match the filter.</li>
+<li><strong>Query full nodes</strong>&nbsp;: The client sends a Bloom filter to full nodes, which check if there are transactions in the blockchain that match the filter.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Receiving transactions</strong> : Full nodes send transactions to the client that potentially match the filter. Since the filter is probabilistic, there may be false positives.</li>
+<li><strong>Receiving transactions</strong>&nbsp;: Full nodes send transactions to the client that potentially match the filter. Since the filter is probabilistic, there may be false positives.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
@@ -106,11 +107,11 @@ git clone https://github.com/iceland2k14/rsz.git
 
 <!-- wp:list -->
 <ul class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Traffic savings</strong> : The client receives only the transactions he needs, which reduces traffic.</li>
+<li><strong>Traffic savings</strong>&nbsp;: The client receives only the transactions he needs, which reduces traffic.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Privacy protection</strong> : The client does not reveal all of its addresses to full nodes, only hashes, which increases privacy.</li>
+<li><strong>Privacy protection</strong>&nbsp;: The client does not reveal all of its addresses to full nodes, only hashes, which increases privacy.</li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -165,23 +166,23 @@ print(check_address_in_bloom_filter(bf, "addr4"))  <em># False</em>
 
 <!-- wp:list {"ordered":true} -->
 <ol class="wp-block-list"><!-- wp:list-item -->
-<li><strong>Bandwidth savings</strong> : Bloom filter allows SPV clients to request from full nodes only those transactions that are potentially related to their addresses, which reduces the amount of data transferred and saves bandwidth <a href="https://www.gate.io/ru/learn/articles/what-is--bloom-filter-in-blockchain/809" target="_blank" rel="noreferrer noopener">1 </a><a href="https://academy.binance.com/ru/glossary/bloom-filter" target="_blank" rel="noreferrer noopener">2</a> .</li>
+<li><strong>Bandwidth savings</strong>&nbsp;: Bloom filter allows SPV clients to request from full nodes only those transactions that are potentially related to their addresses, which reduces the amount of data transferred and saves bandwidth&nbsp;<a href="https://www.gate.io/ru/learn/articles/what-is--bloom-filter-in-blockchain/809" target="_blank" rel="noreferrer noopener">1&nbsp;</a><a href="https://academy.binance.com/ru/glossary/bloom-filter" target="_blank" rel="noreferrer noopener">2</a>&nbsp;.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Privacy protection</strong> : When using a bloom filter, clients do not reveal all of their addresses to full nodes. Instead, they send a filter that prevents nodes from determining which addresses the client is interested in, thereby increasing privacy <a href="https://www.gate.io/ru/learn/articles/what-is--bloom-filter-in-blockchain/809" target="_blank" rel="noreferrer noopener">1 </a><a href="https://bits.media/shest-prichin-zapustit-polnyy-uzel-bitkoina/" target="_blank" rel="noreferrer noopener">4</a> .</li>
+<li><strong>Privacy protection</strong>&nbsp;: When using a bloom filter, clients do not reveal all of their addresses to full nodes. Instead, they send a filter that prevents nodes from determining which addresses the client is interested in, thereby increasing privacy&nbsp;<a href="https://www.gate.io/ru/learn/articles/what-is--bloom-filter-in-blockchain/809" target="_blank" rel="noreferrer noopener">1&nbsp;</a><a href="https://bits.media/shest-prichin-zapustit-polnyy-uzel-bitkoina/" target="_blank" rel="noreferrer noopener">4</a>&nbsp;.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Data processing efficiency</strong> : Bloom filter allows you to quickly check the presence of an element in a set, which makes it an effective tool for filtering transactions in Bitcoin <a href="https://ru.hexlet.io/blog/posts/filtr-bluma-zachem-nuzhen-i-kak-rabotaet" target="_blank" rel="noreferrer noopener">6 </a><a href="https://habr.com/ru/companies/otus/articles/541378/" target="_blank" rel="noreferrer noopener">8</a> .</li>
+<li><strong>Data processing efficiency</strong>&nbsp;: Bloom filter allows you to quickly check the presence of an element in a set, which makes it an effective tool for filtering transactions in Bitcoin&nbsp;<a href="https://ru.hexlet.io/blog/posts/filtr-bluma-zachem-nuzhen-i-kak-rabotaet" target="_blank" rel="noreferrer noopener">6&nbsp;</a><a href="https://habr.com/ru/companies/otus/articles/541378/" target="_blank" rel="noreferrer noopener">8</a>&nbsp;.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Resource savings</strong> : SPV clients do not require storing the entire blockchain, which significantly reduces memory and computational requirements. Bloom filter helps with this by allowing clients to work without downloading the entire blockchain <a href="https://academy.binance.com/ru/glossary/bloom-filter" target="_blank" rel="noreferrer noopener">2 </a><a href="https://ru.bitdegree.org/crypto/obuchenie/kripto-terminy/chto-takoe-filtr-bluma" target="_blank" rel="noreferrer noopener">5</a> .</li>
+<li><strong>Resource savings</strong>&nbsp;: SPV clients do not require storing the entire blockchain, which significantly reduces memory and computational requirements. Bloom filter helps with this by allowing clients to work without downloading the entire blockchain&nbsp;<a href="https://academy.binance.com/ru/glossary/bloom-filter" target="_blank" rel="noreferrer noopener">2&nbsp;</a><a href="https://ru.bitdegree.org/crypto/obuchenie/kripto-terminy/chto-takoe-filtr-bluma" target="_blank" rel="noreferrer noopener">5</a>&nbsp;.</li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>Speed ​​of Operation</strong> : By quickly determining whether there are transactions that match a filter, SPV clients can operate faster than if they had to download and check all transactions manually <a href="https://habr.com/ru/articles/788772/" target="_blank" rel="noreferrer noopener">3 </a><a href="https://ru.hexlet.io/blog/posts/filtr-bluma-zachem-nuzhen-i-kak-rabotaet" target="_blank" rel="noreferrer noopener">6</a> .</li>
+<li><strong>Speed ​​of Operation</strong>&nbsp;: By quickly determining whether there are transactions that match a filter, SPV clients can operate faster than if they had to download and check all transactions manually&nbsp;<a href="https://habr.com/ru/articles/788772/" target="_blank" rel="noreferrer noopener">3&nbsp;</a><a href="https://ru.hexlet.io/blog/posts/filtr-bluma-zachem-nuzhen-i-kak-rabotaet" target="_blank" rel="noreferrer noopener">6</a>&nbsp;.</li>
 <!-- /wp:list-item --></ol>
 <!-- /wp:list -->
 
@@ -357,103 +358,103 @@ print(check_address_in_bloom_filter(bf, "addr4"))  <em># False</em>
 
 <!-- wp:list -->
 <ul id="user-content-block-5e543c86-afad-430c-8aac-8ff0ffccb4e2" class="wp-block-list"><!-- wp:list-item -->
-<li><strong>[1] </strong><em><strong><a href="https://www.youtube.com/@cryptodeeptech">YouTube Channel CryptoDeepTech</a></strong></em></li>
+<li><strong>[1]&nbsp;</strong><em><strong><a href="https://www.youtube.com/@cryptodeeptech">YouTube Channel CryptoDeepTech</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[2] </strong><em><strong><a href="https://t.me/s/cryptodeeptech">Telegram Channel CryptoDeepTech</a></strong></em></li>
+<li><strong>[2]&nbsp;</strong><em><strong><a href="https://t.me/s/cryptodeeptech">Telegram Channel CryptoDeepTech</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[3] </strong><a href="https://github.com/demining/CryptoDeepTools"><em><strong>GitHub Repositories </strong></em> </a><em><strong><a href="https://github.com/demining/CryptoDeepTools">CryptoDeepTools</a></strong></em></li>
+<li><strong>[3]&nbsp;</strong><a href="https://github.com/demining/CryptoDeepTools"><em><strong>GitHub Repositories&nbsp;</strong></em>&nbsp;</a><em><strong><a href="https://github.com/demining/CryptoDeepTools">CryptoDeepTools</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[4]  </strong><em><strong><a href="https://t.me/ExploitDarlenePRO">Telegram: ExploitDarlenePRO</a></strong></em></li>
+<li><strong>[4]&nbsp;&nbsp;</strong><em><strong><a href="https://t.me/ExploitDarlenePRO">Telegram: ExploitDarlenePRO</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[5] </strong><em><strong><a href="https://www.youtube.com/@ExploitDarlenePRO">YouTube Channel ExploitDarlenePRO</a></strong></em></li>
+<li><strong>[5]&nbsp;</strong><em><strong><a href="https://www.youtube.com/@ExploitDarlenePRO">YouTube Channel ExploitDarlenePRO</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[6] </strong><em><strong><a href="https://github.com/keyhunters">GitHub Repositories Keyhunters</a></strong></em></li>
+<li><strong>[6]&nbsp;</strong><em><strong><a href="https://github.com/keyhunters">GitHub Repositories Keyhunters</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[7] </strong><em><strong><a href="https://t.me/s/Bitcoin_ChatGPT">Telegram: Bitcoin ChatGPT</a></strong></em></li>
+<li><strong>[7]&nbsp;</strong><em><strong><a href="https://t.me/s/Bitcoin_ChatGPT">Telegram: Bitcoin ChatGPT</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[8] </strong><strong><em><a href="https://www.youtube.com/@BitcoinChatGPT">YouTube Channel BitcoinChatGPT</a></em></strong></li>
+<li><strong>[8]&nbsp;</strong><strong><em><a href="https://www.youtube.com/@BitcoinChatGPT">YouTube Channel BitcoinChatGPT</a></em></strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[9] </strong><a href="https://bitcoincorewallet.ru/"><strong><em>Bitcoin Core Wallet Vulnerability</em></strong></a><a href="https://bitcoincorewallet.ru/"> </a></li>
+<li><strong>[9]&nbsp;</strong><a href="https://bitcoincorewallet.ru/"><strong><em>Bitcoin Core Wallet Vulnerability</em></strong></a><a href="https://bitcoincorewallet.ru/">&nbsp;</a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[10] </strong> <strong><a href="https://btcpays.org/"><em>BTC PAYS DOCKEYHUNT</em></a></strong></li>
+<li><strong>[10]&nbsp;</strong>&nbsp;<strong><a href="https://btcpays.org/"><em>BTC PAYS DOCKEYHUNT</em></a></strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[11]  </strong><em><strong><a href="https://dockeyhunt.com/"> DOCKEYHUNT</a></strong></em></li>
+<li><strong>[11]&nbsp;&nbsp;</strong><em><strong><a href="https://dockeyhunt.com/">&nbsp;DOCKEYHUNT</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[12]  </strong><em><strong><a href="https://t.me/s/DocKeyHunt">Telegram: DocKeyHunt</a></strong></em></li>
+<li><strong>[12]&nbsp;&nbsp;</strong><em><strong><a href="https://t.me/s/DocKeyHunt">Telegram: DocKeyHunt</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[13]  </strong><em><strong><a href="https://exploitdarlenepro.com/">ExploitDarlenePRO.com</a></strong></em></li>
+<li><strong>[13]&nbsp;&nbsp;</strong><em><strong><a href="https://exploitdarlenepro.com/">ExploitDarlenePRO.com</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[14] </strong><em><strong><a href="https://github.com/demining/Dust-Attack">DUST ATTACK</a></strong></em></li>
+<li><strong>[14]&nbsp;</strong><em><strong><a href="https://github.com/demining/Dust-Attack">DUST ATTACK</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[15] </strong><em><strong><a href="https://bitcoin-wallets.ru/">Vulnerable Bitcoin Wallets</a></strong></em></li>
+<li><strong>[15]&nbsp;</strong><em><strong><a href="https://bitcoin-wallets.ru/">Vulnerable Bitcoin Wallets</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[16] </strong> <em><strong><a href="https://www.youtube.com/playlist?list=PLmq8axEAGAp_kCzd9lCjX9EabJR9zH3J-">ATTACKSAFE SOFTWARE</a></strong></em></li>
+<li><strong>[16]&nbsp;</strong>&nbsp;<em><strong><a href="https://www.youtube.com/playlist?list=PLmq8axEAGAp_kCzd9lCjX9EabJR9zH3J-">ATTACKSAFE SOFTWARE</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[17] </strong><em><strong><a href="https://youtu.be/CzaHitewN-4"> LATTICE ATTACK</a></strong></em></li>
+<li><strong>[17]&nbsp;</strong><em><strong><a href="https://youtu.be/CzaHitewN-4">&nbsp;LATTICE ATTACK</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[18]  </strong><em><strong><a href="https://github.com/demining/Kangaroo-by-JeanLucPons"> RangeNonce</a></strong></em></li>
+<li><strong>[18]&nbsp;&nbsp;</strong><em><strong><a href="https://github.com/demining/Kangaroo-by-JeanLucPons">&nbsp;RangeNonce</a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[19]  <em><a href="https://bitcoinwhoswho.ru/">BitcoinWhosWho</a></em></strong></li>
+<li><strong>[19]&nbsp;&nbsp;<em><a href="https://bitcoinwhoswho.ru/">BitcoinWhosWho</a></em></strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[20]  <em><a href="https://coinbin.ru/">Bitcoin Wallet by Coinbin</a></em></strong></li>
+<li><strong>[20]&nbsp;&nbsp;<em><a href="https://coinbin.ru/">Bitcoin Wallet by Coinbin</a></em></strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[21] </strong><em><strong><a href="https://cryptodeeptech.ru/polynonce-attack/">POLYNONCE ATTACK</a></strong></em><em><strong> <a href="https://cryptodeeptech.ru/polynonce-attack/"></a></strong></em></li>
+<li><strong>[21]&nbsp;</strong><em><strong><a href="https://cryptodeeptech.ru/polynonce-attack/">POLYNONCE ATTACK</a></strong></em><em><strong>&nbsp;<a href="https://cryptodeeptech.ru/polynonce-attack/"></a></strong></em></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[22] </strong> <a href="https://cold-wallets.ru/"><strong><em>Cold Wallet Vulnerability</em></strong></a></li>
+<li><strong>[22]&nbsp;</strong>&nbsp;<a href="https://cold-wallets.ru/"><strong><em>Cold Wallet Vulnerability</em></strong></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[23] </strong> <a href="https://bitcointrezor.ru/"><strong><em>Trezor Hardware Wallet Vulnerability</em></strong></a></li>
+<li><strong>[23]&nbsp;</strong>&nbsp;<a href="https://bitcointrezor.ru/"><strong><em>Trezor Hardware Wallet Vulnerability</em></strong></a></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[24]  <a href="https://bitcoinexodus.ru/"><em>Exodus Wallet Vulnerability</em></a></strong></li>
+<li><strong>[24]&nbsp;&nbsp;<a href="https://bitcoinexodus.ru/"><em>Exodus Wallet Vulnerability</em></a></strong></li>
 <!-- /wp:list-item -->
 
 <!-- wp:list-item -->
-<li><strong>[25] <em><a href="https://bitoncoin.org/">BITCOIN DOCKEYHUNT</a></em><em> <a href="https://bitoncoin.org/"></a></em></strong></li>
+<li><strong>[25]&nbsp;<em><a href="https://bitoncoin.org/">BITCOIN DOCKEYHUNT</a></em><em>&nbsp;<a href="https://bitoncoin.org/"></a></em></strong></li>
 <!-- /wp:list-item --></ul>
 <!-- /wp:list -->
 
@@ -464,4 +465,3 @@ print(check_address_in_bloom_filter(bf, "addr4"))  <em># False</em>
 <!-- wp:image {"linkDestination":"custom"} -->
 <figure class="wp-block-image"><a href="https://cryptodeeptech.ru/discrete-logarithm/" target="_blank" rel="noreferrer noopener"><img src="https://camo.githubusercontent.com/3568257c92c143826ea99b9e75ccdf3b05ed58e05081f33d93b5aca5129d67fc/68747470733a2f2f63727970746f64656570746f6f6c2e72752f77702d636f6e74656e742f75706c6f6164732f323032342f31322f474f4c4431303331422d31303234783537362e706e67" alt="Discrete Logarithm mathematical methods and tools for recovering cryptocurrency wallets Bitcoin"/></a></figure>
 <!-- /wp:image -->
-
