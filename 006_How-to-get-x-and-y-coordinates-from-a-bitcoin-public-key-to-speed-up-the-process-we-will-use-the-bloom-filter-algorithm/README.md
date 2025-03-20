@@ -1,4 +1,4 @@
-# How to get X and Y coordinates from a Bitcoin public key to speed up the process we will use the Bloom filter algorithm
+# How to get X and Y coordinates from a Bitcoin public key to speed up the process we will use the [Bloom filter algorithm](https://keyhunters.ru/how-to-get-x-and-y-coordinates-from-a-bitcoin-public-key-to-speed-up-the-process-we-will-use-the-bloom-filter-algorithm/)
 
 <!-- wp:image {"id":2527,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://keyhunters.ru/wp-content/uploads/2025/03/visual-selection-5-1024x520.png" alt="" class="wp-image-2527"/></figure>
