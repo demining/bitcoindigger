@@ -1,4 +1,4 @@
-# How to convert a public key to a Bitcoin address to speed up the process, we will use the Bloom filter algorithm
+# How to convert a public key to a Bitcoin address to speed up the process, we will use the [Bloom filter algorithm](https://keyhunters.ru/how-to-convert-a-public-key-to-a-bitcoin-address-to-speed-up-the-process-we-will-use-the-bloom-filter-algorithm/)
 
 <!-- wp:image {"id":2524,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://keyhunters.ru/wp-content/uploads/2025/03/visual-selection-4-1-1024x567.png" alt="" class="wp-image-2524"/></figure>
