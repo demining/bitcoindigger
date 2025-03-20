@@ -1,4 +1,4 @@
-# How to extract RSZ values ​​(R, S, Z) from Bitcoin transaction RawTx and uses the "Bloom filter" algorithm to speed up the work
+# How to extract RSZ values ​​(R, S, Z) from Bitcoin transaction RawTx and uses the ["Bloom filter"](https://keyhunters.ru/how-to-extract-rsz-values-r-s-z-from-bitcoin-transaction-rawtx-and-uses-the-bloom-filter-algorithm-to-speed-up-the-work/) algorithm to speed up the work
 
 <!-- wp:paragraph -->
 <p><a href="https://polynonce.ru/author/polynonce/"></a></p>
