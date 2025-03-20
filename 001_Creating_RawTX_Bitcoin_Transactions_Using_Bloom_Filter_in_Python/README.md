@@ -1,4 +1,4 @@
-# Creating RawTX Bitcoin Transactions Using Bloom Filter in Python
+# Creating RawTX Bitcoin Transactions Using [Bloom Filter](https://keyhunters.ru/creating-rawtx-bitcoin-transactions-using-bloom-filter-in-python/) in Python
 
 <!-- wp:image {"id":2509,"sizeSlug":"large","linkDestination":"none","align":"center"} -->
 <figure class="wp-block-image aligncenter size-large"><img src="https://keyhunters.ru/wp-content/uploads/2025/03/visual-selection-2-1024x666.png" alt="" class="wp-image-2509"/></figure>
