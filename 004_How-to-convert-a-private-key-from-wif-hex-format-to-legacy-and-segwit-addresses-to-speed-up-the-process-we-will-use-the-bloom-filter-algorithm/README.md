@@ -1,4 +1,4 @@
-# How to convert a private key from WIF/HEX format to legacy and SegWit addresses to speed up the process, we will use the Bloom filter algorithm
+# How to convert a private key from WIF/HEX format to legacy and SegWit addresses to speed up the process, we will use the [Bloom filter algorithm](https://keyhunters.ru/how-to-convert-a-private-key-from-wif-hex-format-to-legacy-and-segwit-addresses-to-speed-up-the-process-we-will-use-the-bloom-filter-algorithm/)
 
 <!-- wp:image {"lightbox":{"enabled":false},"id":2521,"sizeSlug":"large","linkDestination":"custom","align":"center"} -->
 <figure class="wp-block-image aligncenter size-large"><a href="https://cryptodeeptech.ru/discrete-logarithm" target="_blank" rel=" noreferrer noopener"><img src="https://keyhunters.ru/wp-content/uploads/2025/03/visual-selection-4-1024x666.png" alt="" class="wp-image-2521"/></a></figure>
