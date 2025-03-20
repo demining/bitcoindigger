@@ -1,4 +1,4 @@
-# How to Check Bitcoin Address Balance Using Bloom Filter Algorithm
+# How to Check Bitcoin Address Balance Using [Bloom Filter Algorithm](https://keyhunters.ru/how-to-check-bitcoin-address-balance-using-bloom-filter-algorithm/)
 
 <!-- wp:image {"id":2533,"sizeSlug":"large","linkDestination":"none"} -->
 <figure class="wp-block-image size-large"><img src="https://keyhunters.ru/wp-content/uploads/2025/03/visual-selection-8-1024x519.png" alt="" class="wp-image-2533"/></figure>
